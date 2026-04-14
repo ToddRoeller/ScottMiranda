@@ -5,14 +5,14 @@
   --paper: rgba(255, 255, 255, 0.95);
   --surface: #f8fbff;
   --line: rgba(53, 57, 80, 0.12);
-  --text: #173154;
+  --text: #12345f;
   --muted: #48617d;
-  --navy: #1c428b;
+  --navy: #1f3f82;
   --blue: #2f5fa8;
   --light-blue: #a6c3e9;
   --pale-blue: #eaf2fb;
-  --red: #e11631;
-  --deep-red: #a20f30;
+  --red: #cf1f2e;
+  --deep-red: #9f1730;
   --white: #ffffff;
   --shadow-soft: 0 24px 60px rgba(28, 66, 139, 0.12);
   --shadow-strong: 0 28px 80px rgba(28, 66, 139, 0.18);
@@ -236,6 +236,7 @@ h3 {
 
 .hero-text,
 .brand-line,
+.hero-kicker,
 .story-copy p,
 .service-card p,
 .process-step p,
@@ -253,6 +254,14 @@ h3 {
 }
 
 .brand-line {
+  margin: 0 0 16px;
+  color: var(--deep-red);
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.hero-kicker {
   margin: 0 0 16px;
   color: var(--deep-red);
   font-size: 1.08rem;
@@ -340,6 +349,11 @@ h3 {
 }
 
 .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 16px 28px rgba(17, 25, 40, 0.18);
+}
+
+.btn-outline-light:hover {
   background: rgba(255, 255, 255, 0.28);
   box-shadow: 0 16px 28px rgba(17, 25, 40, 0.18);
 }
@@ -575,6 +589,12 @@ h3 {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(28, 66, 139, 0.08);
   box-shadow: 0 16px 30px rgba(28, 66, 139, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 34px rgba(28, 66, 139, 0.1);
 }
 
 .feature-card {
